@@ -1,0 +1,139 @@
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* This will stack the children vertically */
+    }
+
+    .navbar {
+        background-color: #adaeaf;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: medium;
+        font-weight: 400;
+        border-radius: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        position: fixed; /* This will fix the navbar at the top of the page */
+        top: 0; /* This will align the navbar to the top */
+        left: 35%; /* This will center the navbar */
+        z-index: 1000; /* This will ensure the navbar is always on top of other elements */
+    }
+
+
+
+    .navbar ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .navbar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .navbar ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .input-container {
+        width: 80%; /* Adjust as needed */
+        margin: auto; /* This will center the input boxes */
+        display: flex; /* This will align the children inline */
+        justify-content: space-between; /* This will add space between the children */
+        flex-wrap: wrap; /* This will move items to the next line if there isn't enough space */
+    }
+    
+    input {
+        flex: 1; /* This will make the input boxes take up the available space */
+        margin-bottom: 10px; /* Adds some space between the input boxes */
+        margin-right: 10px; /* Adds some space to the right of the input boxes */
+    }
+    
+    .table-container {
+        margin-top: 20px;
+        border-radius: 10rem;
+        width: 80%;
+        margin: auto;
+    }
+
+
+    .table-container h2 {
+        color: #e1e1e1;
+        text-align: center;
+    }
+
+    .navbarElemTitle{
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        border-radius: 10rem;
+    }
+    
+    table th, table td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    table th {
+        background-color: #f2f2f2;
+        color: #131313;
+    }
+    
+    table tr {
+        background-color: #b7b7b7;
+    }
+    
+    .roundedTable {
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    button.btn {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 20rem;
+        cursor: pointer;
+        margin: 5px;
+    }
+    
+    button.add {
+        background-color: #28a745;
+        color: #fff;
+    }
+    
+    button.delete {
+        background-color: #dc3545;
+        color: #fff;
+        border-radius: 20rem;
+    }
+
+    #logout-btn{
+        background-color: #333333;
+        color: #fff;
+        border-radius: 20rem;
+    }
